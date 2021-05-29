@@ -1,0 +1,30 @@
+Write a program to calculate the Net Salary Allowances: DA = 70% of Basic Salary, HRA = 7% of Basic Salary, MA = 2% of Basic Salary, TA = 4% of Basic Salary, 
+Salary Deduction ; PF = 12% of Basic Salary, IT = any value (e.g. 500) Net Salary = Basic Salary + Allowances - Deduction
+
+Code (Input) 
+#include<stdio.h> 
+#include<conio.h> 
+void main() 
+{ 
+float BasicSalary, Allowances, DA, HRA, MA, TA, Deduction, PF, IT, NetSalary; 
+clrscr(); 
+printf(“Enter Basic Salary: ”); 
+scanf(“%f”, &BasicSalary); 
+printf(“Allowances:\n”); 
+DA=BasicSalary*0.7; 
+Printf(“DA = %f”,DA); 
+HRA=BasicSalary*0.07; 
+printf(“\nHRA = %f”,HRA); 
+MA=BasicSalary*0.02; 
+printf(“\nMA = %f”,MA); 
+TA=BasicSalary*0.04; 
+printf(“\nTA = %f”,TA); 
+printf(“\nDeduction:\n”); 
+PF=BasicSalary*0.12; printf(“Pf = %f”,PF); 
+printf(“\nIT = ”); scanf(“%f”,&IT); 
+Allowances=DA+HRA+MA+TA; 
+Deduction=PF+IT; 
+NetSalary=BasicSalary+Allowances-Deduction; 
+printf(“Net Salary = %f”,NetSalary);
+getch(); 
+}
